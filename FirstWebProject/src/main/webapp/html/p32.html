@@ -1,0 +1,95 @@
+<!-- 
+	HTML의 주석처리
+	
+	1. HTML => ~ML(뒤에가 ML로 끝나는 것들) = 태그 + 속성
+	                                     ==========
+	   = 태그
+	     1) 여는태그 => 자바 { 와 비슷
+	     	<태그명>
+	     2) 닫는태그 => 자바 } 와 비슷
+	     	</태그명>
+	     3) 반복태그 => 변수선언 (이미지, 입력창, 다음줄 출력)
+	     	<태그명/>
+	   = HTML의 태그는 사용자 정의가 없다 (이미 만들어져 있다) => 암기
+	     java, xml이 어려운 이유 => 사용자 정의 (직접 만들어야 하기 때문)
+	     but. HTML은 만들어져 있으므로 단순히 외우기만 하면 된다
+	   = HTML은 정적파일 => 동작을 할 수 없다 (동적) => 동적으로 변환 (CSS/JS로 만든다)
+	   = 태그 '<'와'>'
+	   = HTML은 태그가 대소문자를 구분하지 않는다 (권장 : 태그는 소문자로 표기한다)
+	                 ===========
+	   = 태그의 열고 닫기
+	     <a> ~~ </a>
+	     <table> ~ </table> => 직용부분을 명확하게 하기 위해서
+	   = 가급적이면 들여쓰기를 잘한다
+	     <a>
+	        <b></b>
+	        <c></c>
+	     </a> ==> 사용
+	     <a>
+	     <b></b>
+	     <c></c>
+	     </a> ==> 오류는 아니지만 수정하기 어렵다 => HTML은 자주 수정
+	   = <!DOCTYPE html> => 문서정의 => HTML 버전을 확인 ==> 현재는 HTML5버전
+	     HTML5의 특징 => 시멘텍태그 사용 (= 알아보기 쉽게 태그명을 제작) ====> (기술면접 나올 내용 - GET/POST, 시멘텍 태그)
+	                   예) <embed> <object> => 동영상을 의미
+	                   ==> <video> <audio> => (5버전) 알아보기 쉽게 변경
+	                      <br> 다음줄 출력 => \n => <newLine>
+	       => 단점 => IE(Internet Explorer)에서 완전 지원하지 않는다
+                     HTML5을 개발 한 곳 => 오페라, FireFOX, 크롬 => MS를 제외하고 개발 => MS에서 호환성으 주지 않았다
+	                 우리나라 => 80% IE
+                     호환이 되는 태그만 공부하면 된다
+           => 증가, 사라진 태그(권장 => 경고) => center, table, font   (+.숫자 앞 노란색 - 경고)
+              ===
+              header, section, footer, aside, nav... => 템플릿 (화면 구조)                               
+	   = 주로 태그는 혼합 : 속성을 포함
+	     ex. 이미지 출력 : <img  src="" width="" height="">
+	                     ==== ====   =====    ======
+	                     태그명 파일명  크기 지정
+	   = 태그명 => 어떤 모양을 출력하는지 확인
+	     속성명 => 크기 조절, 색상 조절, 파일명 지정, 이동할 파일명
+	   = 소속관계 : 계층구조
+	     ex. <a><span>데이터 출력</span></a>
+	   = HTML 단점
+	     HTML은 오류가 없다 (단 화면이 이상하게 출력된다) => 비절차적 => 한줄씩 번역(인터프리터)
+	   
+	   = HTML의 구조
+	     <html> => html을 시작한다   <?xml?>
+	       <head>
+	          화면 출력부분이 아니다, 기타 정보 출력 (화면 디자인 => CSS, 이벤트 처리 => JS)
+1.	          <style>
+	          	디자인
+	          </style>
+2.	          <script>
+	          	기능 처리(이미지 회전...)
+	          </script>
+3.	          브라우저 제목 <title>
+4.	          한글 저장 <meta> => 한글 사용 (EUC-KR, UTF-8 2종류)
+                                         ======  ===== 다른 운영체제 호환성 (사이트 => 모바일)
+                                         이클립스에서 default
+	       </head>
+	       <body>
+	       </body>
+	     </html> => html의 종료
+	     
+	     *** 특수기호 : &nbsp; (공백을 줄때 사용)  "  "
+	                  <!ENTITY nbsp "  "> => &nbsp;
+	                  XML => DTD
+	   =
+	     
+ -->
+<!DOCTYPE html> <!-- DOCTYPE : Document Type : 문서형식 : HTML 버전
+                 => 형식을 불러온다 // 5버전) -->
+<!-- 
+	html (head, body)
+	head (style, script, title, meta)
+	body (table, center...)
+ -->
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<center>HTML시작</center>
+</body>
+</html>
